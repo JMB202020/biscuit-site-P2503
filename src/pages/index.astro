@@ -1,37 +1,33 @@
 ---
 import '../styles/site.css';
-const site = {
-  name: 'Woodside Kennels & Cattery',
-  phone: '01832 720623',
-  address: '1 Clopton, Kettering, Northants NN14 3DZ',
-};
 ---
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Woodside Kennels & Cattery | Pet Boarding in Kettering</title>
-  <meta name="description" content="Superior boarding for cats and dogs in the Northamptonshire countryside. Heated kennels, UPVC chalets, four grass paddocks and daily countryside walks." />
+  <title>Woodside Kennels and Cattery | Professional Pet Boarding</title>
+  <meta name="description" content="Woodside Kennels and Cattery offers caring, professional boarding for dogs and cats. Heated kennels, outdoor runs, and daily exercise. Viewings always welcome." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
 <body>
 
   <!-- Preview Banner -->
-  <div style="background:#B45309;color:white;padding:10px 16px;text-align:center;font-size:14px;position:sticky;top:0;z-index:50"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap"><span>Preview redesign for <strong>Woodside Kennels & Cattery</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2503&amp;name=Woodside%20Kennels%20%26%20Cattery" style="display:inline-flex;align-items:center;padding:4px 16px;background:white;color:#B45309;font-weight:700;font-size:12px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Woodside Kennels and Cattery</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2503&amp;name=Woodside%20Kennels%20and%20Cattery" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
   <!-- Nav -->
-  <nav class="bg-[var(--color-brand-accent-deep)] text-white sticky top-[45px] z-40">
+  <nav class="bg-[var(--color-brand-primary-deep)] text-white sticky top-[41px] z-40">
     <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-      <a href="/P2503" class="font-display font-800 text-lg text-white hover:text-[var(--color-accent-light)] transition-colors">
-        Woodside Kennels &amp; Cattery
+      <a href="/P2503" class="font-display font-extrabold text-lg text-white hover:text-[var(--color-accent-light)] transition-colors">
+        🐾 Woodside Kennels &amp; Cattery
       </a>
       <!-- Desktop nav -->
       <ul class="hidden md:flex gap-8 text-sm font-semibold">
         <li><a href="/P2503" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Home</a></li>
-        <li><a href="/P2503/cats-html" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Cats</a></li>
-        <li><a href="/P2503/dogs-html" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Dogs</a></li>
-        <li><a href="/P2503/contact-html" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Contact</a></li>
+        <li><a href="#facilities" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Facilities</a></li>
+        <li><a href="#services" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Services</a></li>
+        <li><a href="#faq" class="text-white hover:text-[var(--color-accent-light)] transition-colors">FAQs</a></li>
+        <li><a href="#contact" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Contact</a></li>
       </ul>
       <!-- Hamburger -->
       <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu" aria-expanded="false">
@@ -41,119 +37,172 @@ const site = {
       </button>
     </div>
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-brand-accent-deep)] border-t border-white/20 px-4 pb-4">
+    <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-brand-primary-deep)] border-t border-white/20 px-4 pb-4">
       <ul class="flex flex-col gap-3 pt-3 text-sm font-semibold">
-        <li><a href="/P2503" class="block text-white hover:text-[var(--color-accent-light)] transition-colors py-1">Home</a></li>
-        <li><a href="/P2503/cats-html" class="block text-white hover:text-[var(--color-accent-light)] transition-colors py-1">Cats</a></li>
-        <li><a href="/P2503/dogs-html" class="block text-white hover:text-[var(--color-accent-light)] transition-colors py-1">Dogs</a></li>
-        <li><a href="/P2503/contact-html" class="block text-white hover:text-[var(--color-accent-light)] transition-colors py-1">Contact</a></li>
+        <li><a href="/P2503" class="block text-white hover:text-[var(--color-accent-light)] py-1 transition-colors">Home</a></li>
+        <li><a href="#facilities" class="block text-white hover:text-[var(--color-accent-light)] py-1 transition-colors">Facilities</a></li>
+        <li><a href="#services" class="block text-white hover:text-[var(--color-accent-light)] py-1 transition-colors">Services</a></li>
+        <li><a href="#faq" class="block text-white hover:text-[var(--color-accent-light)] py-1 transition-colors">FAQs</a></li>
+        <li><a href="#contact" class="block text-white hover:text-[var(--color-accent-light)] py-1 transition-colors">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden min-h-[90vh] flex items-center">
-    <img
-      src="/P2503/images/layout-top.jpg"
-      alt="Woodside Kennels and Cattery countryside setting"
-      class="absolute inset-0 w-full h-full object-cover"
-      fetchpriority="high"
-    />
-    <div class="absolute inset-0 bg-black/60"></div>
+  <!-- Hero: solid colour, no image -->
+  <section class="relative overflow-hidden bg-[var(--color-brand-primary)] min-h-[90vh] flex items-center">
+    <!-- Decorative SVG leaf pattern -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none select-none" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="leaves" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+            <text x="10" y="40" font-size="28" fill="white" opacity="0.6">🌿</text>
+            <text x="50" y="70" font-size="20" fill="white" opacity="0.4">🍃</text>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#leaves)" />
+      </svg>
+    </div>
     <div class="relative z-10 max-w-4xl mx-auto px-6 py-24 text-center text-white">
-      <span class="inline-block bg-[var(--color-brand-accent)] text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6">📍 Kettering, Northamptonshire</span>
-      <h1 class="text-4xl md:text-6xl font-800 leading-tight mb-6 text-white">
+      <span class="inline-block bg-[var(--color-brand-accent)] text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6">📍 Unknown</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
         Woodside Kennels<br />&amp; Cattery
       </h1>
       <p class="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
-        Superior boarding for your cats and dogs in the beautiful Northamptonshire countryside
+        A warm, caring home from home for your dogs and cats while you are away.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/P2503/contact-html" class="inline-block bg-[var(--color-brand-accent)] hover:bg-[var(--color-brand-accent-deep)] text-white font-700 px-8 py-3 rounded-lg transition-colors">
+        <a href="#contact" class="inline-block bg-[var(--color-brand-accent)] hover:bg-[var(--color-brand-accent-deep)] text-white font-bold px-8 py-3 rounded-lg transition-colors">
           Get in Touch
         </a>
-        <a href="tel:01832720623" class="inline-block bg-white/20 hover:bg-white/30 text-white font-700 px-8 py-3 rounded-lg transition-colors border border-white/40">
-          Call 01832 720623
+        <a href="#services" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold px-8 py-3 rounded-lg transition-colors border border-white/40">
+          Our Services
         </a>
       </div>
+    </div>
+    <!-- Wave divider -->
+    <div class="absolute bottom-0 left-0 right-0" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-10">
+        <path d="M0 60L1440 0V60H0Z" fill="#F8F5F0"/>
+      </svg>
     </div>
   </section>
 
   <!-- Trust Strip -->
-  <section class="bg-[var(--color-brand-accent)] text-white py-8">
+  <section class="bg-[var(--color-brand-bg)] py-10">
     <div class="max-w-6xl mx-auto px-6">
       <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <li>
-          <div class="text-3xl mb-2">🌿</div>
-          <div class="font-700 text-sm">Countryside Setting</div>
-          <div class="text-white/80 text-xs mt-1">Just off the A604, Northants</div>
+        <li class="flex flex-col items-center">
+          <div class="text-4xl mb-2">🌿</div>
+          <div class="font-bold text-sm text-[var(--color-ink)]">Countryside Setting</div>
+          <div class="text-[var(--color-ink-soft)] text-xs mt-1">Peaceful, natural surroundings</div>
         </li>
-        <li>
-          <div class="text-3xl mb-2">🏠</div>
-          <div class="font-700 text-sm">Superior Accommodation</div>
-          <div class="text-white/80 text-xs mt-1">Heated, spacious &amp; hygienic</div>
+        <li class="flex flex-col items-center">
+          <div class="text-4xl mb-2">🏠</div>
+          <div class="font-bold text-sm text-[var(--color-ink)]">Heated Kennels</div>
+          <div class="text-[var(--color-ink-soft)] text-xs mt-1">Warm and comfortable all year</div>
         </li>
-        <li>
-          <div class="text-3xl mb-2">🛡️</div>
-          <div class="font-700 text-sm">Fully Insured</div>
-          <div class="text-white/80 text-xs mt-1">Comprehensive cover included</div>
+        <li class="flex flex-col items-center">
+          <div class="text-4xl mb-2">🛡️</div>
+          <div class="font-bold text-sm text-[var(--color-ink)]">Fully Insured</div>
+          <div class="text-[var(--color-ink-soft)] text-xs mt-1">Complete peace of mind</div>
         </li>
-        <li>
-          <div class="text-3xl mb-2">👁️</div>
-          <div class="font-700 text-sm">Viewings Welcome</div>
-          <div class="text-white/80 text-xs mt-1">Come and see for yourself</div>
+        <li class="flex flex-col items-center">
+          <div class="text-4xl mb-2">👁️</div>
+          <div class="font-bold text-sm text-[var(--color-ink)]">Viewings Welcome</div>
+          <div class="text-[var(--color-ink-soft)] text-xs mt-1">Come and see for yourself</div>
         </li>
       </ul>
     </div>
   </section>
 
-  <!-- About / Main Content -->
-  <section class="py-20 bg-[var(--color-brand-bg)]">
-    <div class="max-w-4xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-800 text-[var(--color-ink)] mb-4">A home from home for your pet</h2>
-        <p class="text-[var(--color-ink-soft)] text-lg max-w-2xl mx-auto">
-          Woodside Pet Hotel is situated in the beautiful Northamptonshire countryside just off the A604 between Thrapston and Oundle.
+  <!-- Facilities -->
+  <section id="facilities" class="py-20 bg-[var(--color-cream)]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--color-ink)] mb-4">Our Facilities</h2>
+        <p class="text-[var(--color-ink-soft)] max-w-xl mx-auto text-lg">
+          Purpose-built for comfort, safety, and happy pets. We take pride in the quality of everything we provide.
         </p>
       </div>
-      <div class="grid md:grid-cols-2 gap-12 items-start">
-        <div>
-          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-6">
-            We offer superior accommodation for cats and dogs. You can relax in the knowledge that your pet will enjoy first class care in a safe, happy and comfortable environment.
-          </p>
-          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-6">
-            Cleanliness is a top priority with each chalet thoroughly cleaned every day using high quality veterinary virucidal disinfectant.
-          </p>
-          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed">
-            Fully comprehensive insurance is included for the duration of your pet's stay and viewing is encouraged for all owners.
-          </p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Dog facilities -->
+        <div class="bg-white rounded-2xl p-8 border border-[var(--color-border)] shadow-sm">
+          <div class="text-4xl mb-4">🐕</div>
+          <h3 class="text-xl font-extrabold text-[var(--color-ink)] mb-3">Dog Kennels</h3>
+          <ul class="space-y-3 text-sm text-[var(--color-ink-soft)]">
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Heated sleeping quarters</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Covered outdoor runs adjacent to each kennel</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Grass exercise paddocks for free play</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Daily walks and outdoor time</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Thoroughly cleaned with veterinary disinfectant daily</span>
+            </li>
+          </ul>
         </div>
-        <div class="bg-[var(--color-cream)] rounded-2xl p-8 border border-[var(--color-border)]">
-          <h3 class="text-xl font-700 text-[var(--color-ink)] mb-6">Our Facilities</h3>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
-              <span class="text-[var(--color-ink-soft)]">Four grass paddocks for daily exercise and play</span>
+        <!-- Cat facilities -->
+        <div class="bg-white rounded-2xl p-8 border border-[var(--color-border)] shadow-sm">
+          <div class="text-4xl mb-4">🐈</div>
+          <h3 class="text-xl font-extrabold text-[var(--color-ink)] mb-3">Cat Chalets</h3>
+          <ul class="space-y-3 text-sm text-[var(--color-ink-soft)]">
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Individual self-contained chalets</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
-              <span class="text-[var(--color-ink-soft)]">Daily off-road walk (on extended lead) through woodland and natural countryside</span>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Climate-controlled for year-round comfort</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
-              <span class="text-[var(--color-ink-soft)]">Heated, climate-controlled sleeping quarters</span>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Scratch post, sleeping basket and litter tray provided</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
-              <span class="text-[var(--color-ink-soft)]">Veterinary virucidal disinfectant used daily</span>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Private space away from dogs</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
-              <span class="text-[var(--color-ink-soft)]">Fully comprehensive insurance included</span>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Daily cleaning and individual attention</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
-              <span class="text-[var(--color-ink-soft)]">Medication administered at no extra charge</span>
+          </ul>
+        </div>
+        <!-- General care -->
+        <div class="bg-white rounded-2xl p-8 border border-[var(--color-border)] shadow-sm">
+          <div class="text-4xl mb-4">❤️</div>
+          <h3 class="text-xl font-extrabold text-[var(--color-ink)] mb-3">Included Care</h3>
+          <ul class="space-y-3 text-sm text-[var(--color-ink-soft)]">
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Comprehensive insurance throughout the stay</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Medication administered at no extra charge</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Special diet requirements accommodated</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Familiar bedding and toys welcome</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[var(--color-brand-primary)] font-bold mt-0.5">✓</span>
+              <span>Experienced, attentive staff</span>
             </li>
           </ul>
         </div>
@@ -161,71 +210,317 @@ const site = {
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="py-20 bg-[var(--color-cream)]">
+  <!-- Services / Prices -->
+  <section id="services" class="py-20 bg-[var(--color-brand-bg)]">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-800 text-[var(--color-ink)] mb-4">What We Offer</h2>
-        <p class="text-[var(--color-ink-soft)] max-w-xl mx-auto">Whether you have cats or dogs, we have the perfect boarding solution in the Northamptonshire countryside.</p>
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--color-ink)] mb-4">What We Offer</h2>
+        <p class="text-[var(--color-ink-soft)] max-w-xl mx-auto text-lg">
+          Straightforward boarding for dogs and cats. Get in touch for pricing tailored to your pet and the duration of their stay.
+        </p>
       </div>
-      <div class="grid md:grid-cols-2 gap-8">
-        <a href="/P2503/cats-html" class="group block bg-white rounded-2xl overflow-hidden border border-[var(--color-border)] hover:shadow-lg transition-shadow">
-          <div class="aspect-video overflow-hidden">
-            <img
-              src="/P2503/images/cats3.jpg"
-              alt="Cat cattery chalets at Woodside"
-              width="600"
-              height="338"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-            />
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Dog boarding -->
+        <div class="bg-[var(--color-cream)] rounded-2xl p-8 border border-[var(--color-border)]">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-3xl">🐕</span>
+            <h3 class="text-2xl font-extrabold text-[var(--color-ink)]">Dog Boarding</h3>
           </div>
-          <div class="p-8">
-            <h3 class="text-2xl font-800 text-[var(--color-ink)] mb-3">Cat Boarding</h3>
-            <p class="text-[var(--color-ink-soft)] mb-4">Modern UPVC chalets with double glazing, climate control and individual furnishings including scratch tree, chair, litter tray and sleeping basket.</p>
-            <span class="text-[var(--color-brand-accent)] font-700 text-sm">Find out more &rarr;</span>
+          <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed mb-6">
+            Your dog stays in a warm, clean kennel with their own outdoor run, access to grass paddocks for play, and daily walks. We follow any routine you share with us as closely as possible.
+          </p>
+          <ul class="space-y-2 text-sm text-[var(--color-ink-soft)] mb-8">
+            <li class="flex items-center gap-2">
+              <span class="text-[var(--color-brand-primary)]">✓</span> Heated kennel with outdoor run
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[var(--color-brand-primary)]">✓</span> Grass paddock exercise
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[var(--color-brand-primary)]">✓</span> Daily walks included
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[var(--color-brand-primary)]">✓</span> Insurance included
+            </li>
+          </ul>
+          <a href="#contact" class="block text-center bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-deep)] text-white font-bold px-6 py-3 rounded-lg transition-colors">
+            Enquire About Dog Boarding
+          </a>
+        </div>
+        <!-- Cat boarding -->
+        <div class="bg-[var(--color-cream)] rounded-2xl p-8 border border-[var(--color-border)]">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-3xl">🐈</span>
+            <h3 class="text-2xl font-extrabold text-[var(--color-ink)]">Cat Boarding</h3>
           </div>
-        </a>
-        <a href="/P2503/dogs-html" class="group block bg-white rounded-2xl overflow-hidden border border-[var(--color-border)] hover:shadow-lg transition-shadow">
-          <div class="aspect-video overflow-hidden relative bg-[var(--color-accent-light)]">
-            <img
-              src="/P2503/images/layout-bottom.jpg"
-              alt="Dog kennels at Woodside"
-              width="600"
-              height="338"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-            />
-          </div>
-          <div class="p-8">
-            <h3 class="text-2xl font-800 text-[var(--color-ink)] mb-3">Dog Boarding</h3>
-            <p class="text-[var(--color-ink-soft)] mb-4">Individually designed kennel block exceeding local authority standards. Heated, spacious sleeping quarters with adjacent covered outdoor areas and four grass paddocks.</p>
-            <span class="text-[var(--color-brand-accent)] font-700 text-sm">Find out more &rarr;</span>
-          </div>
-        </a>
+          <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed mb-6">
+            Cats stay in their own private chalet, completely separate from the dogs. Each chalet is warm, comfortable, and has everything your cat needs to feel at home.
+          </p>
+          <ul class="space-y-2 text-sm text-[var(--color-ink-soft)] mb-8">
+            <li class="flex items-center gap-2">
+              <span class="text-[var(--color-brand-primary)]">✓</span> Individual climate-controlled chalet
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[var(--color-brand-primary)]">✓</span> Fully separate from dogs
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[var(--color-brand-primary)]">✓</span> Scratch post, basket and litter tray
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[var(--color-brand-primary)]">✓</span> Insurance included
+            </li>
+          </ul>
+          <a href="#contact" class="block text-center bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-deep)] text-white font-bold px-6 py-3 rounded-lg transition-colors">
+            Enquire About Cat Boarding
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="relative overflow-hidden py-24">
-    <img
-      src="/P2503/images/layout-bottom.jpg"
-      alt="Woodside countryside"
-      class="absolute inset-0 w-full h-full object-cover"
-      loading="lazy"
-    />
-    <div class="absolute inset-0 bg-black/60"></div>
-    <div class="relative z-10 max-w-2xl mx-auto px-6 text-center text-white">
-      <h2 class="text-3xl md:text-4xl font-800 mb-4 text-white">Ready to book your pet's stay?</h2>
-      <p class="text-white/90 text-lg mb-8">Viewings are always welcome. Give us a call or drop us a message to discuss your requirements.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="tel:01832720623" class="inline-block bg-[var(--color-brand-accent)] hover:bg-[var(--color-brand-accent-deep)] text-white font-700 px-8 py-3 rounded-lg transition-colors">
-          Call 01832 720623
-        </a>
-        <a href="/P2503/contact-html" class="inline-block bg-white/20 hover:bg-white/30 text-white font-700 px-8 py-3 rounded-lg border border-white/40 transition-colors">
-          Send a Message
-        </a>
+  <!-- Daily Routine -->
+  <section class="py-20 bg-[var(--color-brand-accent)] text-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">A Typical Day at Woodside</h2>
+        <p class="text-white/85 max-w-xl mx-auto">
+          We keep a consistent daily routine so every pet knows what to expect and can settle in quickly.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="text-4xl mb-3">🌅</div>
+          <div class="font-bold text-base mb-1">Morning</div>
+          <p class="text-white/80 text-sm">Early feed and fresh water. Kennels cleaned and kennels checked. Morning exercise in the paddocks.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl mb-3">🚶</div>
+          <div class="font-bold text-base mb-1">Mid-Morning</div>
+          <p class="text-white/80 text-sm">Dogs taken for walks. Cats given play time and individual attention. Chalets refreshed.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl mb-3">🌤️</div>
+          <div class="font-bold text-base mb-1">Afternoon</div>
+          <p class="text-white/80 text-sm">Afternoon exercise session. Medication administered if required. Fresh water throughout the day.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl mb-3">🌙</div>
+          <div class="font-bold text-base mb-1">Evening</div>
+          <p class="text-white/80 text-sm">Evening feed. Final check of all animals. Heating adjusted overnight for a comfortable sleep.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Bring -->
+  <section class="py-20 bg-[var(--color-cream)]">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl font-extrabold text-[var(--color-ink)] mb-4">What to Bring</h2>
+          <p class="text-[var(--color-ink-soft)] mb-6">
+            To help your pet settle in as quickly as possible, we recommend bringing the following:
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">🍽️</span>
+              <div>
+                <strong class="text-[var(--color-ink)] text-sm">Your pet's usual food</strong>
+                <p class="text-[var(--color-ink-soft)] text-sm">A sudden change in diet can upset their stomach. Bring enough for the full stay.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">🛏️</span>
+              <div>
+                <strong class="text-[var(--color-ink)] text-sm">A familiar blanket or bed</strong>
+                <p class="text-[var(--color-ink-soft)] text-sm">Something that smells like home helps them feel comfortable and relaxed.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">🧸</span>
+              <div>
+                <strong class="text-[var(--color-ink)] text-sm">Favourite toy</strong>
+                <p class="text-[var(--color-ink-soft)] text-sm">A comfort object or favourite toy can make a big difference.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">💊</span>
+              <div>
+                <strong class="text-[var(--color-ink)] text-sm">Medication (if applicable)</strong>
+                <p class="text-[var(--color-ink-soft)] text-sm">Clearly labelled with dosage instructions. We administer at no extra charge.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">📋</span>
+              <div>
+                <strong class="text-[var(--color-ink)] text-sm">Vaccination records</strong>
+                <p class="text-[var(--color-ink-soft)] text-sm">Up-to-date vaccinations are required for the safety of all animals in our care.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-[var(--color-brand-primary)] text-white rounded-2xl p-8">
+          <h3 class="text-xl font-extrabold mb-4 text-white">Vaccination Requirements</h3>
+          <p class="text-white/85 text-sm leading-relaxed mb-4">
+            For the safety and wellbeing of all animals in our care, we require proof of current vaccinations before any animal can stay with us.
+          </p>
+          <div class="space-y-4">
+            <div>
+              <div class="font-bold text-sm mb-1">🐕 Dogs must be vaccinated against:</div>
+              <ul class="text-white/80 text-sm space-y-1 pl-4">
+                <li>Distemper, Parvovirus, Hepatitis</li>
+                <li>Leptospirosis</li>
+                <li>Kennel Cough (Bordetella) recommended</li>
+              </ul>
+            </div>
+            <div>
+              <div class="font-bold text-sm mb-1">🐈 Cats must be vaccinated against:</div>
+              <ul class="text-white/80 text-sm space-y-1 pl-4">
+                <li>Cat Flu (Feline Herpesvirus and Calicivirus)</li>
+                <li>Feline Infectious Enteritis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-20 bg-[var(--color-brand-bg)]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--color-ink)] mb-6">About Us</h2>
+      <p class="text-[var(--color-ink-soft)] text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
+        At Woodside Kennels and Cattery, we understand that leaving your pet behind is never easy. That is why we work hard to make sure every animal in our care is treated with the same warmth and attention they would receive at home.
+      </p>
+      <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-10 max-w-2xl mx-auto">
+        We keep our numbers small so that every dog and cat gets the individual care and attention they deserve. Cleanliness is a top priority and we use veterinary-grade disinfectant throughout our facilities every single day. We are fully insured and welcome viewings from any owner who would like to see the facilities before booking.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-xl px-6 py-4 text-center min-w-[120px]">
+          <div class="text-3xl mb-1">🌿</div>
+          <div class="font-bold text-sm text-[var(--color-ink)]">Peaceful setting</div>
+        </div>
+        <div class="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-xl px-6 py-4 text-center min-w-[120px]">
+          <div class="text-3xl mb-1">🧹</div>
+          <div class="font-bold text-sm text-[var(--color-ink)]">Spotlessly clean</div>
+        </div>
+        <div class="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-xl px-6 py-4 text-center min-w-[120px]">
+          <div class="text-3xl mb-1">🛡️</div>
+          <div class="font-bold text-sm text-[var(--color-ink)]">Fully insured</div>
+        </div>
+        <div class="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-xl px-6 py-4 text-center min-w-[120px]">
+          <div class="text-3xl mb-1">👁️</div>
+          <div class="font-bold text-sm text-[var(--color-ink)]">Viewings welcome</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-[var(--color-cream)]">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--color-ink)] mb-4">Frequently Asked Questions</h2>
+        <p class="text-[var(--color-ink-soft)]">Got a question? Here are the ones we hear most often.</p>
+      </div>
+      <div class="space-y-4">
+        <details class="bg-white border border-[var(--color-border)] rounded-xl group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-[var(--color-ink)] list-none">
+            Can I come and see the facilities before booking?
+            <span class="text-[var(--color-brand-primary)] text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-6 pb-6 text-[var(--color-ink-soft)] text-sm leading-relaxed">
+            Absolutely. We actively encourage viewings. We want you to feel completely confident before you leave your pet with us. Just get in touch to arrange a convenient time.
+          </p>
+        </details>
+        <details class="bg-white border border-[var(--color-border)] rounded-xl group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-[var(--color-ink)] list-none">
+            Does my pet need to be vaccinated?
+            <span class="text-[var(--color-brand-primary)] text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-6 pb-6 text-[var(--color-ink-soft)] text-sm leading-relaxed">
+            Yes. We require proof of up-to-date vaccinations for all animals staying with us. This protects every pet in our care. Dogs should have core vaccinations and we recommend the kennel cough vaccine. Cats should have their annual boosters. Please bring your pet's vaccination records on arrival.
+          </p>
+        </details>
+        <details class="bg-white border border-[var(--color-border)] rounded-xl group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-[var(--color-ink)] list-none">
+            Can I bring my pet's own food?
+            <span class="text-[var(--color-brand-primary)] text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-6 pb-6 text-[var(--color-ink-soft)] text-sm leading-relaxed">
+            We recommend it. Keeping your pet on their usual food avoids any stomach upset from a sudden dietary change. Just bring enough for the duration of their stay, clearly labelled with their name and feeding instructions.
+          </p>
+        </details>
+        <details class="bg-white border border-[var(--color-border)] rounded-xl group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-[var(--color-ink)] list-none">
+            Can you administer my pet's medication?
+            <span class="text-[var(--color-brand-primary)] text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-6 pb-6 text-[var(--color-ink-soft)] text-sm leading-relaxed">
+            Yes, and we do this at no extra charge. Simply bring the medication clearly labelled with your pet's name and the dosage instructions. Let us know at drop-off and we will take care of the rest.
+          </p>
+        </details>
+        <details class="bg-white border border-[var(--color-border)] rounded-xl group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-[var(--color-ink)] list-none">
+            Are cats and dogs kept separate?
+            <span class="text-[var(--color-brand-primary)] text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-6 pb-6 text-[var(--color-ink-soft)] text-sm leading-relaxed">
+            Yes, completely. Our cat chalets are in a separate area of the premises, away from the dog kennels. Cats have no sight, sound, or smell contact with the dogs. They can fully relax.
+          </p>
+        </details>
+        <details class="bg-white border border-[var(--color-border)] rounded-xl group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-[var(--color-ink)] list-none">
+            How do I book?
+            <span class="text-[var(--color-brand-primary)] text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-6 pb-6 text-[var(--color-ink-soft)] text-sm leading-relaxed">
+            Just get in touch using the form below or give us a call. We will talk through your requirements and check availability. We recommend booking well in advance for busy periods such as school holidays and bank holidays.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" class="py-20 bg-[var(--color-brand-primary)]">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Get in Touch</h2>
+        <p class="text-white/85 text-lg max-w-xl mx-auto">
+          Ready to book, or just want to find out more? Send us a message and we will get back to you as soon as we can. Viewings are always welcome.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl p-8 md:p-10 shadow-lg max-w-2xl mx-auto">
+        <form action="https://formspree.io/f/mwvaaojq" method="POST" class="space-y-5">
+          <div class="grid md:grid-cols-2 gap-5">
+            <div>
+              <label for="name" class="block text-sm font-semibold text-[var(--color-ink)] mb-1.5">Your name</label>
+              <input type="text" id="name" name="name" required class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)]" placeholder="Jane Smith" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-semibold text-[var(--color-ink)] mb-1.5">Email address</label>
+              <input type="email" id="email" name="email" required class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)]" placeholder="jane@example.com" />
+            </div>
+          </div>
+          <div>
+            <label for="pet" class="block text-sm font-semibold text-[var(--color-ink)] mb-1.5">Pet type</label>
+            <select id="pet" name="pet_type" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)]">
+              <option value="">Please select</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="both">Dog and Cat</option>
+            </select>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-semibold text-[var(--color-ink)] mb-1.5">Message</label>
+            <textarea id="message" name="message" rows="4" required class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)]" placeholder="Tell us your pet's name, the dates you need and anything else we should know..."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-deep)] text-white font-bold py-3 rounded-lg transition-colors">
+            Send Enquiry
+          </button>
+        </form>
       </div>
     </div>
   </section>
@@ -235,34 +530,31 @@ const site = {
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-3 gap-10 mb-10">
         <div>
-          <h3 class="font-800 text-lg mb-4">Woodside Kennels &amp; Cattery</h3>
-          <address class="not-italic text-white/80 text-sm leading-relaxed">
-            1 Clopton<br />
-            Kettering<br />
-            Northants NN14 3DZ
-          </address>
-          <p class="mt-3 text-white/80 text-sm">
-            Tel: <a href="tel:01832720623" class="text-white hover:text-[var(--color-accent-light)] transition-colors">01832 720623</a>
+          <h3 class="font-extrabold text-lg mb-3">🐾 Woodside Kennels &amp; Cattery</h3>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">
+            Professional, caring pet boarding for dogs and cats. We treat every animal as if they were our own.
           </p>
         </div>
         <div>
-          <h3 class="font-700 text-sm uppercase tracking-wider mb-4 text-white/60">Pages</h3>
+          <h3 class="font-bold text-xs uppercase tracking-wider mb-4 text-white/50">Pages</h3>
           <ul class="space-y-2 text-sm">
-            <li><a href="/P2503" class="text-white/80 hover:text-white transition-colors">Home</a></li>
-            <li><a href="/P2503/cats-html" class="text-white/80 hover:text-white transition-colors">Cat Boarding</a></li>
-            <li><a href="/P2503/dogs-html" class="text-white/80 hover:text-white transition-colors">Dog Boarding</a></li>
-            <li><a href="/P2503/contact-html" class="text-white/80 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="/P2503" class="text-white/75 hover:text-white transition-colors">Home</a></li>
+            <li><a href="#facilities" class="text-white/75 hover:text-white transition-colors">Facilities</a></li>
+            <li><a href="#services" class="text-white/75 hover:text-white transition-colors">Services</a></li>
+            <li><a href="#faq" class="text-white/75 hover:text-white transition-colors">FAQs</a></li>
+            <li><a href="#contact" class="text-white/75 hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="font-700 text-sm uppercase tracking-wider mb-4 text-white/60">Location</h3>
-          <p class="text-white/80 text-sm leading-relaxed">
-            Situated in the beautiful Northamptonshire countryside just off the A604 between Thrapston and Oundle.
-          </p>
+          <h3 class="font-bold text-xs uppercase tracking-wider mb-4 text-white/50">Contact</h3>
+          <div class="text-white/70 text-sm space-y-2">
+            <p>Use the contact form on this page to get in touch and we will respond as soon as possible.</p>
+          </div>
         </div>
       </div>
-      <div class="border-t border-white/20 pt-6 text-center text-xs text-white/50">
-        &copy; {new Date().getFullYear()} Woodside Kennels &amp; Cattery. All rights reserved.
+      <div class="border-t border-white/20 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/40">
+        <span>&copy; {new Date().getFullYear()} Woodside Kennels and Cattery. All rights reserved.</span>
+        <span>Sample site built by <a href="https://biscuitweb.co.uk" class="underline hover:text-white/70 transition-colors">Biscuit Web</a></span>
       </div>
     </div>
   </footer>

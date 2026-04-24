@@ -4,14 +4,17 @@
 @font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700 800; font-display: swap; src: url('/fonts/nunito-latin.woff2') format('woff2'); }
 
 @theme {
-  --color-brand-bg: #F7F7F5;
-  --color-brand-accent: #5B5B35;
-  --color-brand-accent-deep: #49492A;
-  --color-ink: #1B1B10;
-  --color-ink-soft: #373720;
-  --color-border: #CECEC2;
-  --color-cream: #F2F2EF;
-  --color-accent-light: #E6E6E1;
+  --color-brand-bg: #F8F5F0;
+  --color-brand-primary: #2D5016;
+  --color-brand-primary-deep: #1E3A0F;
+  --color-brand-accent: #7C5C2E;
+  --color-brand-accent-deep: #5A4220;
+  --color-brand-warm: #C8956A;
+  --color-ink: #1A1208;
+  --color-ink-soft: #4A3820;
+  --color-border: #D4C5A9;
+  --color-cream: #F2EBE0;
+  --color-accent-light: #E8DCC8;
   --color-white: #FFFFFF;
   --font-display: 'Nunito', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
