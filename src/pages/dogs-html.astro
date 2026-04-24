@@ -1,0 +1,285 @@
+---
+import '../styles/site.css';
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Boarding | Woodside Kennels & Cattery | Kettering</title>
+  <meta name="description" content="Individually designed kennels exceeding local authority standards. Heated sleeping quarters, four grass paddocks and daily countryside walks. Kettering, Northants." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+
+  <!-- Preview Banner -->
+  <div style="background:#B45309;color:white;padding:10px 16px;text-align:center;font-size:14px;position:sticky;top:0;z-index:50"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap"><span>Preview redesign for <strong>Woodside Kennels & Cattery</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2503&amp;name=Woodside%20Kennels%20%26%20Cattery" style="display:inline-flex;align-items:center;padding:4px 16px;background:white;color:#B45309;font-weight:700;font-size:12px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+
+  <!-- Nav -->
+  <nav class="bg-[var(--color-brand-accent-deep)] text-white sticky top-[45px] z-40">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/P2503" class="font-display font-800 text-lg text-white hover:text-[var(--color-accent-light)] transition-colors">
+        Woodside Kennels &amp; Cattery
+      </a>
+      <!-- Desktop nav -->
+      <ul class="hidden md:flex gap-8 text-sm font-semibold">
+        <li><a href="/P2503" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Home</a></li>
+        <li><a href="/P2503/cats-html" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Cats</a></li>
+        <li><a href="/P2503/dogs-html" class="text-white underline underline-offset-4 decoration-2 transition-colors">Dogs</a></li>
+        <li><a href="/P2503/contact-html" class="text-white hover:text-[var(--color-accent-light)] transition-colors">Contact</a></li>
+      </ul>
+      <!-- Hamburger -->
+      <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu" aria-expanded="false">
+        <span class="block w-6 h-0.5 bg-white transition-all" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all" id="bar3"></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-brand-accent-deep)] border-t border-white/20 px-4 pb-4">
+      <ul class="flex flex-col gap-3 pt-3 text-sm font-semibold">
+        <li><a href="/P2503" class="block text-white hover:text-[var(--color-accent-light)] transition-colors py-1">Home</a></li>
+        <li><a href="/P2503/cats-html" class="block text-white hover:text-[var(--color-accent-light)] transition-colors py-1">Cats</a></li>
+        <li><a href="/P2503/dogs-html" class="block text-white underline underline-offset-4 py-1">Dogs</a></li>
+        <li><a href="/P2503/contact-html" class="block text-white hover:text-[var(--color-accent-light)] transition-colors py-1">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden min-h-[60vh] flex items-center">
+    <img
+      src="/P2503/images/layout-top.jpg"
+      alt="Woodside Kennels countryside grounds"
+      class="absolute inset-0 w-full h-full object-cover"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center text-white">
+      <span class="inline-block bg-[var(--color-brand-accent)] text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6">📍 Kettering, Northamptonshire</span>
+      <h1 class="text-4xl md:text-5xl font-800 leading-tight mb-4 text-white">
+        Dog Boarding
+      </h1>
+      <p class="text-xl text-white/90 max-w-2xl mx-auto">
+        Purpose-built kennels exceeding local authority standards, with daily countryside walks and four grass paddocks
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 bg-[var(--color-brand-bg)]">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid md:grid-cols-5 gap-12 items-start">
+        <div class="md:col-span-3">
+          <h2 class="text-3xl font-800 text-[var(--color-ink)] mb-6">Our Kennel Block</h2>
+          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-6">
+            Our new individually designed kennel block far exceeds the local authorities' suggested standards for canine accommodation. Modern materials provide individual comfortable, heated, spacious and hygienic sleeping quarters with adjacent covered outdoor areas.
+          </p>
+          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-6">
+            Extra large breeds or two or more dogs from the same family can be accommodated in our specially designed extra large quarters. Sleeping baskets with veterinary bedding are provided, or if you wish, bring your own along with your pet's favourite toys. Our aim is for your pet to feel at home and happy no matter how long their stay.
+          </p>
+
+          <h3 class="text-xl font-700 text-[var(--color-ink)] mb-3 mt-8">Exercise &amp; Walks</h3>
+          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-6">
+            Four grass paddocks are available for daily exercise and play as well as a daily off-road walk (on extended lead) through woodland and natural countryside.
+          </p>
+
+          <h3 class="text-xl font-700 text-[var(--color-ink)] mb-3">Meals</h3>
+          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-6">
+            Only you know what is best for your pet. We will provide the same food and feed at the same times as your own regular routine. Treats (if permitted) are provided daily and last thing at night.
+          </p>
+
+          <h3 class="text-xl font-700 text-[var(--color-ink)] mb-3">Hygiene</h3>
+          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-6">
+            Cleanliness is a top priority with each kennel thoroughly cleaned every day using a high quality veterinary virucidal disinfectant. As we wish to ensure the health and safety of all our boarders we prefer regular revaccinations including an up to date vaccination certificate.
+          </p>
+          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed mb-6">
+            We require Intrac KC or Norbivac KC as immunisation against the most virulent strains of Bordetella (kennel cough).
+          </p>
+
+          <p class="text-[var(--color-ink-soft)] text-base leading-relaxed">
+            At no extra charge we are happy to administer medication should this be required. Fully comprehensive insurance is also included for the duration of your pet's stay.
+          </p>
+        </div>
+
+        <!-- Sidebar highlights -->
+        <aside class="md:col-span-2">
+          <div class="bg-[var(--color-cream)] rounded-2xl p-8 border border-[var(--color-border)] mb-6">
+            <h3 class="text-lg font-700 text-[var(--color-ink)] mb-5">Included as standard</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Heated, spacious sleeping quarters</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Adjacent covered outdoor areas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Four grass paddocks for exercise</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Daily woodland walks on extended lead</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Extra large quarters for big breeds or families</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Veterinary bedding provided</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Daily treats included</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Medication administered at no extra charge</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[var(--color-brand-accent)] font-700 text-lg mt-0.5">✓</span>
+                <span class="text-[var(--color-ink-soft)] text-sm">Fully comprehensive insurance included</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-[var(--color-cream)] rounded-2xl p-6 border border-[var(--color-border)] mb-6">
+            <h3 class="text-base font-700 text-[var(--color-ink)] mb-3">Vaccination Requirements</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed">
+              For the health of all our boarders we require an up to date vaccination certificate, including Intrac KC or Norbivac KC vaccination against Bordetella (kennel cough).
+            </p>
+          </div>
+
+          <div class="bg-[var(--color-brand-accent)] rounded-2xl p-6 text-white text-center">
+            <p class="font-700 text-lg mb-2">Enquire about dog boarding</p>
+            <p class="text-white/80 text-sm mb-4">Viewings always welcome</p>
+            <a href="tel:01832720623" class="block bg-white text-[var(--color-brand-accent)] font-700 text-sm px-6 py-3 rounded-lg hover:bg-[var(--color-accent-light)] transition-colors">
+              Call 01832 720623
+            </a>
+            <a href="/P2503/contact-html" class="block mt-3 text-white/80 hover:text-white text-sm transition-colors">
+              Send a message &rarr;
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-16 bg-[var(--color-cream)]">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-800 text-[var(--color-ink)] mb-8 text-center">Our Kennels</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img
+            src="/P2503/images/layout-top.jpg"
+            alt="Woodside kennels grounds"
+            width="400"
+            height="400"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img
+            src="/P2503/images/layout-bottom.jpg"
+            alt="Woodside kennels exterior"
+            width="400"
+            height="400"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl col-span-2 md:col-span-1">
+          <img
+            src="/P2503/images/10d-3655.jpg"
+            alt="A dog enjoying its stay at Woodside"
+            width="400"
+            height="400"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-[var(--color-brand-bg)]">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-2xl md:text-3xl font-800 text-[var(--color-ink)] mb-4">Ready to book your dog in?</h2>
+      <p class="text-[var(--color-ink-soft)] mb-8">Give us a call to discuss your requirements or arrange a viewing. We'd love to show you around.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:01832720623" class="inline-block bg-[var(--color-brand-accent)] hover:bg-[var(--color-brand-accent-deep)] text-white font-700 px-8 py-3 rounded-lg transition-colors">
+          Call 01832 720623
+        </a>
+        <a href="/P2503/contact-html" class="inline-block bg-[var(--color-accent-light)] hover:bg-[var(--color-border)] text-[var(--color-ink)] font-700 px-8 py-3 rounded-lg transition-colors">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color-brand-accent-deep)] text-white pt-12 pb-8">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <h3 class="font-800 text-lg mb-4">Woodside Kennels &amp; Cattery</h3>
+          <address class="not-italic text-white/80 text-sm leading-relaxed">
+            1 Clopton<br />
+            Kettering<br />
+            Northants NN14 3DZ
+          </address>
+          <p class="mt-3 text-white/80 text-sm">
+            Tel: <a href="tel:01832720623" class="text-white hover:text-[var(--color-accent-light)] transition-colors">01832 720623</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="font-700 text-sm uppercase tracking-wider mb-4 text-white/60">Pages</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/P2503" class="text-white/80 hover:text-white transition-colors">Home</a></li>
+            <li><a href="/P2503/cats-html" class="text-white/80 hover:text-white transition-colors">Cat Boarding</a></li>
+            <li><a href="/P2503/dogs-html" class="text-white/80 hover:text-white transition-colors">Dog Boarding</a></li>
+            <li><a href="/P2503/contact-html" class="text-white/80 hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-700 text-sm uppercase tracking-wider mb-4 text-white/60">Location</h3>
+          <p class="text-white/80 text-sm leading-relaxed">
+            Situated in the beautiful Northamptonshire countryside just off the A604 between Thrapston and Oundle.
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-6 text-center text-xs text-white/50">
+        &copy; {new Date().getFullYear()} Woodside Kennels &amp; Cattery. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+    toggle?.addEventListener('click', () => {
+      const open = menu?.classList.toggle('hidden') === false;
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) {
+        bar1?.classList.add('rotate-45', 'translate-y-2');
+        bar2?.classList.add('opacity-0');
+        bar3?.classList.add('-rotate-45', '-translate-y-2');
+      } else {
+        bar1?.classList.remove('rotate-45', 'translate-y-2');
+        bar2?.classList.remove('opacity-0');
+        bar3?.classList.remove('-rotate-45', '-translate-y-2');
+      }
+    });
+  </script>
+
+</body>
+</html>
